@@ -8,9 +8,14 @@ List<Pessoa> hospedes = new List<Pessoa>();
 
 Pessoa p1 = new Pessoa(nome: "Hóspede 1");
 Pessoa p2 = new Pessoa(nome: "Hóspede 2");
+// alteração  para testar carga GITHUB
+Pessoa p3 = new Pessoa(nome: "Hóspede 3");
+// fazendo teste inicial de carga no GITHUB
 
 hospedes.Add(p1);
 hospedes.Add(p2);
+// alteração  para testar carga GITHUB
+hospedes.Add(p3);
 
 // Cria a suíte
 Suite suite = new Suite(tipoSuite: "Premium", capacidade: 2, valorDiaria: 30);
