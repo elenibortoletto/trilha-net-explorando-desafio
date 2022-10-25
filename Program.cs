@@ -14,17 +14,18 @@ Pessoa p3 = new Pessoa(nome: "Hóspede 3");
 
 hospedes.Add(p1);
 hospedes.Add(p2);
-// alteração  para testar carga GITHUB
+// alteração  para testar estouro da capacidade da Suite
 hospedes.Add(p3);
 
 // Cria a suíte
 Suite suite = new Suite(tipoSuite: "Premium", capacidade: 2, valorDiaria: 30);
 
 // Cria uma nova reserva, passando a suíte e os hóspedes
-Reserva reserva = new Reserva(diasReservados: 5);
+Reserva reserva = new Reserva(diasReservados: 10);
 reserva.CadastrarSuite(suite);
 reserva.CadastrarHospedes(hospedes);
 
 // Exibe a quantidade de hóspedes e o valor da diária
 Console.WriteLine($"Hóspedes: {reserva.ObterQuantidadeHospedes()}");
 Console.WriteLine($"Valor diária: {reserva.CalcularValorDiaria()}");
+
